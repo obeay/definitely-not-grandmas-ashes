@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>YOU WAKE UP IN A DARK ROOM BOUND TO A CHAIR, WITH A RAGING HEADACHE.</p>
+<button onclick="typeWriter()">where am i?</button>
+<p id="demo"></p>
+<p id ="time"></p>
+
+<button id="1" onclick="okay()">um  okay?</button>
+<button id ="2" onclick="yum">ɯnʎ ʎɯɯnʎ</button>
+
+<script>
+
+
+  var i = 0;
+  var txt = 'a man with a deep voice says: YO, WHEN CHUCK NORRIS POURS MILK ON HIS RICE KRISPIES... THEY KEEP QUIET.';
+  var speed = 80;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+function okay(){
+  location.replace("ded.html")
+}
+function yum(){
+  location.replace("flakes.html")
+}
+
+//  var timeVar = setInterval(myTimer, 10000);
+//    function myTimer(){
+//}
+
+</script>
+
+</body>
+</html>
